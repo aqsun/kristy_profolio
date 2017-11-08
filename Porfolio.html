@@ -5,19 +5,23 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kristy's Profolio</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+	  <link rel="stylesheet" href="css/bootstrap.min.css">
+	  <!--<link rel="stylesheet" href="css/style.css">-->
+	  <link rel="stylesheet" href="css/mdb.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Lovers+Quarrel|Merienda|Montez" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	  <script src="js/jquery-3.2.1.min.js"></script>
+	  <!--<script src="js/bootstrap.min.js"></script>
+	  <script src="js/mdb.min.js"></script>
+	  <script src="js/popper.min.js"></script>-->
+
   </head>
   <body>
-    <div class="container-fluid banner">
+    <div class="container-fluid">
       <ul class="nav justify-content-end">
         <li class="nav-item">
-          <a class="nav-link active" href="#About">About</a>
+          <a class="nav-link active" href="#About" onclick="showIntroduction()">About</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#Works">Works</a>
@@ -28,48 +32,44 @@
       </ul>
 
 
-        <div class="row justify-content-around ">
+        <div class="row justify-content-around banner">
             <div class="col-12 heading">
-              <h1> Hello, I am Kristy</h1>
-            </div>
-          <div class="col-3">
-            <img class="homeBanner" src="image/myprofile.png" alt="My profile flat image">
-          </div>
-          <div class="col-5">
-            <img class="homeBanner" src="image/IATworking.png" alt="My profile flat image">
-          </div>
-        </div>
-     </div>
-
-        <section id="About">
-               <!-- <div class="col-12 content">
-                  <h1> Hello, I am Kristy</h1>
-                  <p>I am currently a student at Simon Fraser University under the School of Interactive Arts and Technology.
+              <!-- <img class="animated bounce infinite" src="https://mdbootstrap.com/img/logo/mdb-transparent.png"> -->
+              <h2> Hello, I am Kristy</h2>
+              <!-- <section id="About"> -->
+               	<div id="introduction" class="col-md-9 offset-md-1 notShow">
+                  <p class=brief>I am currently a student at Simon Fraser University under the School of Interactive Arts and Technology.
                     I am enthusiastic about interface design and enjoy working towards to improve user experience by creating
                     an easy use and visualize layouts. In interior design field, I am pursuing in a minimalist lifestyle. My interior
                     design idea is having a small space doesn’t mean you can’t live large. I have strong background knowledge I goal is continue developing on how to use minimalist style to
                     create a trendy space to improve people's living quality.</p>
-               </div> -->
-         </section>
-
+               </div>
+         <!-- </section> -->
+            </div>
+          <div class="col-3">
+            <img class="animated fadeInUp homeBanner" src="image/myprofile.png" alt="My profile flat image">
+          </div>
+          <div class="col-5">
+            <img class="animated fadeInUp homeBanner" src="image/IATworking.png" alt="My profile flat image">
+          </div>
+        </div>
+     </div>
 
             <section id="Works">
-              <div class="container">
-                  <h1> Work </h1>
-                  <div class="row">
-                    <div class="col">
+                <h1> Work </h1>
+              <div class="row justify-content-center">
+                  <div class="col-6">
                       <img class="homeBanner" src="image/WorkFirstPage.png" alt="Introduction my first work on Porfolio page">
                       <a class="btn btn-primary" href="work.html" role="button">More details</a>
                     </div>
-                    <div class="col">
+                    <div class="col-6">
                       <img class="homeBanner" src="image/SecondWork_FrontPage.png" alt="Introduction my second work on Porfolio page">
                       <a class="btn btn-primary" href="Second_Work.html" role="button">More details</a>
                     </div>
                   </div>
-              </div>
             </section>
 
-
+<script src="js/normalize.js"></script>
 
   </body>
 </html>
