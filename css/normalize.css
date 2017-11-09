@@ -10,14 +10,14 @@ body, .brief{
 }
 
 .nav-link{
-  color: #fdb752;
+  color: #f4b494;
   /*margin-top: 2em;
   margin-right: 2em;*/
   margin: 2em;
 }
 
 .banner{
-  background-color: #fdb752;
+  background-color: #f4b494;
 }
 
 .homeBanner{
@@ -27,11 +27,14 @@ width:80%;
 height:auto;
 padding-top: 3em;
 padding-bottom: 5em;
+}
 
+.homelogo{
+  width:40%;
+  height:auto;
 }
 
 .heading{
-font-family: 'Merienda', cursive;
 margin-top: 3em;
 margin-bottom: 1em;
 }
@@ -39,9 +42,33 @@ margin-bottom: 1em;
 h2 {
   display: flex;
   justify-content: center;
+  font-family: 'Merienda', cursive;
   color: #ffffff;
 }
 
 .notShow{
 	display: none;
+}
+
+.works{
+display: flex;
+text-align: center;
+width:100%;
+height:auto;
+padding-top: 3em;
+padding-bottom: 5em;
+}
+
+.work_section{
+  margin-top: 6em;
+  background-color: #ebb7c7;
+}
+
+#Works, #Contact{
+  padding-top: 3em;
+}
+
+.contact_section{
+  margin-top: 6em;
+  background-color: #a9cdad;
 }

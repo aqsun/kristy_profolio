@@ -19,32 +19,36 @@
   </head>
   <body>
     <div class="container-fluid">
-      <ul class="nav justify-content-end">
-        <li class="nav-item">
-          <a class="nav-link active" href="#About" onclick="showIntroduction()">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#Works">Works</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#Contact">Contact</a>
-        </li>
-      </ul>
+      <div class="row align-items-center">
+       <div class="col-2">
+          <a href="Porfolio.html"><img class="homelogo" src="image/homeLogo.png" alt="name logo can go back to porfolio page">
+       </div>
+      <div class="col-10">
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link active" href="#About" onclick="showIntroduction()">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Works">Works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Contact">Contact</a>
+            </li>
+          </ul>
+      </div>
+    </div>
 
 
         <div class="row justify-content-around banner">
             <div class="col-12 heading">
-              <!-- <img class="animated bounce infinite" src="https://mdbootstrap.com/img/logo/mdb-transparent.png"> -->
-              <h2> Hello, I am Kristy</h2>
-              <!-- <section id="About"> -->
-               	<div id="introduction" class="col-md-9 offset-md-1 notShow">
+              <h2 id="introduction-title"> Hello, I am Kristy</h2>
+               	<div id="introduction" class="col-md-9 offset-md-1 animated fadeIn notShow">
                   <p class=brief>I am currently a student at Simon Fraser University under the School of Interactive Arts and Technology.
                     I am enthusiastic about interface design and enjoy working towards to improve user experience by creating
                     an easy use and visualize layouts. In interior design field, I am pursuing in a minimalist lifestyle. My interior
                     design idea is having a small space doesn’t mean you can’t live large. I have strong background knowledge I goal is continue developing on how to use minimalist style to
                     create a trendy space to improve people's living quality.</p>
                </div>
-         <!-- </section> -->
             </div>
           <div class="col-3">
             <img class="animated fadeInUp homeBanner" src="image/myprofile.png" alt="My profile flat image">
@@ -55,19 +59,39 @@
         </div>
      </div>
 
-            <section id="Works">
-                <h1> Work </h1>
-              <div class="row justify-content-center">
-                  <div class="col-6">
-                      <img class="homeBanner" src="image/WorkFirstPage.png" alt="Introduction my first work on Porfolio page">
-                      <a class="btn btn-primary" href="work.html" role="button">More details</a>
-                    </div>
-                    <div class="col-6">
-                      <img class="homeBanner" src="image/SecondWork_FrontPage.png" alt="Introduction my second work on Porfolio page">
-                      <a class="btn btn-primary" href="Second_Work.html" role="button">More details</a>
-                    </div>
-                  </div>
-            </section>
+      <div class="container-fluid work_section">
+        <section id="Works">
+            <h2> Works </h2>
+          <div class="row justify-content-around">
+              <div class="col-5" onclick="location.href='work.html'">
+                  <img class="works" src="image/WorkFirstPage.png" alt="Introduction my first work on Porfolio page">
+                  <!-- <a class="btn btn-primary" href="work.html" role="button">More details</a> -->
+                </div>
+                <div class="col-5" onclick="location.href='Second_Work.html'">
+                  <img class="works" src="image/SecondWork_FrontPage.png" alt="Introduction my second work on Porfolio page">
+                  <!-- <a class="btn btn-primary" href="Second_Work.html" role="button">More details</a> -->
+                </div>
+              </div>
+         </section>
+       </div>
+
+       <div class="container-fluid contact_section">
+         <section id="Contact">
+             <h2> Contact </h2>
+           <div class="row justify-content-around">
+               <div class="col-5" onclick="location.href='work.html'">
+                   <img class="works" src="image/WorkFirstPage.png" alt="Introduction my first work on Porfolio page">
+                   <!-- <a class="btn btn-primary" href="work.html" role="button">More details</a> -->
+                 </div>
+                 <div class="col-5" onclick="location.href='Second_Work.html'">
+                   <img class="works" src="image/SecondWork_FrontPage.png" alt="Introduction my second work on Porfolio page">
+                   <!-- <a class="btn btn-primary" href="Second_Work.html" role="button">More details</a> -->
+                 </div>
+               </div>
+          </section>
+        </div>
+
+
 
 <script src="js/normalize.js"></script>
 
