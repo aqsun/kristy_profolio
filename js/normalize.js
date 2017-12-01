@@ -7,4 +7,6 @@ $( document ).ready(function() {
 function showIntroduction() {
     $('#introduction').removeClass('notShow');
     $('#introduction-title').addClass('notShow');
+    $('#moreAboutMe').addClass('notShow');
+    $('#followMe').removeClass('notShow');
 }
