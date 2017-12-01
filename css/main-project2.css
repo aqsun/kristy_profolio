@@ -4,7 +4,6 @@
 */
 
 body {
-
   font-family: 'Roboto', sans-serif;
   padding: 2rem;
   color: #58595B;
@@ -103,6 +102,10 @@ cite {
 	 border-radius: 0.1rem;
 }
 
+.nav-link{
+color: #f4b494;
+}
+
 /* Styling for the intext_link */
 .intext_link{
   color: #0189bb;
@@ -113,24 +116,24 @@ cite {
 }
 
 /* Styling for the submit button */
-.button {
+/*.button {
   padding: 0.5em 0.75em;
   color: #FFF;
   background-color: #0189bb;
   border-radius: 0.25em;
-  text-decoration: none;
+  text-decoration: none;*/
 
   /*-webkit-transition: background-color 0.5s ease-out;
   transition: background-color 0.5s ease-out;*/
 }
 
-.button:hover, .button:focus {
+/*.button:hover, .button:focus {
   background-color:#90cad5;
   /*border: 0.1em solid;*/
   /*border-color: #5a95b3;*/
-  color: #FFFFFF;
+  /*color: #FFFFFF;*/
   /*padding: 0.4em 0.65em;*/
-}
+/*}*/
 
 
 

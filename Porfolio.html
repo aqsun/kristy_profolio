@@ -9,27 +9,29 @@
 	  <link rel="stylesheet" href="css/bootstrap.min.css">
 	  <!--<link rel="stylesheet" href="css/style.css">-->
 	  <link rel="stylesheet" href="css/mdb.min.css">
-    <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Lovers+Quarrel|Merienda|Montez" rel="stylesheet">
 	  <script src="js/jquery-3.2.1.min.js"></script>
-	  <!--<script src="js/bootstrap.min.js"></script>
-	  <script src="js/mdb.min.js"></script>
-	  <script src="js/popper.min.js"></script>-->
+    <link rel="stylesheet" href="css/main.css">
 
+	  <!--<script src="js/mdb.min.js"></script>-->
+	  <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
   </head>
   <body>
     <div class="container-fluid">
+
+      <!--Nav-->
       <div class="row align-items-center">
-       <div class="col-2">
-          <a href="Porfolio.html"><img class="homelogo" src="image/homeLogo.png" alt="name logo can go back to porfolio page">
+       <div class="col-lg-2 col-md-3 col-sm-4 col-4">
+          <a href="Porfolio.html"><img class="homelogo" src="image/HomeLogo.png" alt="name logo can go back to porfolio page">
        </div>
-      <div class="col-10">
+      <div class="col-lg-10 col-md-9 col-sm-8 col-8">
           <ul class="nav justify-content-end">
             <li class="nav-item">
               <a class="nav-link active" href="#About" onclick="showIntroduction()">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Works">Works</a>
+              <a class="nav-link" href="#Works">Projects</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#Contact">Contact</a>
@@ -38,58 +40,96 @@
       </div>
     </div>
 
-
+    <!--Introduction-->
         <div class="row justify-content-around banner">
-            <div class="col-12 heading">
+            <div class="col-lg-12 heading">
               <h2 id="introduction-title"> Hello, I am Kristy</h2>
                	<div id="introduction" class="col-md-9 offset-md-1 animated fadeIn notShow">
-                  <p class=brief>I am currently a student at Simon Fraser University under the School of Interactive Arts and Technology.
-                    I am enthusiastic about interface design and enjoy working towards to improve user experience by creating
-                    an easy use and visualize layouts. In interior design field, I am pursuing in a minimalist lifestyle. My interior
-                    design idea is having a small space doesn’t mean you can’t live large. I have strong background knowledge I goal is continue developing on how to use minimalist style to
-                    create a trendy space to improve people's living quality.</p>
+                  <p class=brief>
+                    I am enthusiastic about interface design and enjoy working towards improving user experience. My experience in SFU has taught me
+                    to design user interaction that is as simple and efficient as possible to maximize usability and help the user accomplish their goals.
+                    Moreover, I have the strong illustrator and photoshop skills necessary to enhance my designs and to convey my ideas and concepts to clients.
+                    I am currently a student at Simon Fraser University in the School of Interactive Arts and Technology pursuing a concentration in Design.</p>
                </div>
             </div>
-          <div class="col-3">
-            <img class="animated fadeInUp homeBanner" src="image/myprofile.png" alt="My profile flat image">
-          </div>
-          <div class="col-5">
+          <div class="col-lg-3 col-md-4 col-sm-6 col-8">
+             <img class="animated fadeInUp homeBanner_left" src="image/myprofile.png" alt="My profile flat image">
+            <a id="moreAboutMe" class="animated fadeInUp AboutMe_button"  href="#About" onclick="showIntroduction()">More About Me</a>
+            <a id="followMe" class="animated fadeIn followMe_button notShow"  href="https://www.facebook.com/kristy.sun.7">Follow Me</a>
+         </div>
+
+          <div class="col-lg-5 col-md-6 interface_image">
             <img class="animated fadeInUp homeBanner" src="image/IATworking.png" alt="My profile flat image">
           </div>
         </div>
-     </div>
 
-      <div class="container-fluid work_section">
+
+        <!--Works Section-->
         <section id="Works">
-            <h2> Works </h2>
-          <div class="row justify-content-around">
-              <div class="col-5" onclick="location.href='work.html'">
-                  <img class="works" src="image/WorkFirstPage.png" alt="Introduction my first work on Porfolio page">
-                  <!-- <a class="btn btn-primary" href="work.html" role="button">More details</a> -->
-                </div>
-                <div class="col-5" onclick="location.href='Second_Work.html'">
-                  <img class="works" src="image/SecondWork_FrontPage.png" alt="Introduction my second work on Porfolio page">
-                  <!-- <a class="btn btn-primary" href="Second_Work.html" role="button">More details</a> -->
-                </div>
-              </div>
-         </section>
-       </div>
+        <div class="row justify-content-around work_section">
+            <div class="col-lg-12 heading">
+            <h2> Projects </h2>
+          </div>
 
-       <div class="container-fluid contact_section">
-         <section id="Contact">
-             <h2> Contact </h2>
-           <div class="row justify-content-around">
-               <div class="col-5" onclick="location.href='work.html'">
-                   <img class="works" src="image/WorkFirstPage.png" alt="Introduction my first work on Porfolio page">
-                   <!-- <a class="btn btn-primary" href="work.html" role="button">More details</a> -->
-                 </div>
-                 <div class="col-5" onclick="location.href='Second_Work.html'">
-                   <img class="works" src="image/SecondWork_FrontPage.png" alt="Introduction my second work on Porfolio page">
-                   <!-- <a class="btn btn-primary" href="Second_Work.html" role="button">More details</a> -->
-                 </div>
-               </div>
-          </section>
+        <div class="col-lg-5 col-md-6 col-sm-9">
+           <div class="hovereffect" >
+              <img class="works1" src="image/WorkFirstPage.png" alt="Introduction my first work on Porfolio page">
+            <div class="overlay">
+              <h2>view</h2>
+            <a class="info" href="work.html"></a>
+           </div>
+          </div>
         </div>
+
+
+        <div class="col-lg-5 col-md-6 col-sm-9 gap">
+           <div class="hovereffect" >
+              <img class="works2" src="image/Secondwork_FrontPage.png" alt="Introduction my second work on Porfolio page">
+            <div class="overlay">
+              <h2>view</h2>
+              <a class="info" href="Second_Work.html"></a>
+
+           </div>
+          </div>
+        </div>
+      </div>
+
+                <!-- <div class="col-lg-5 col-md-6 col-sm-9" onclick="location.href='Second_Work.html'">
+                  <img class="works" src="image/SecondWork_FrontPage.png" alt="Introduction my second work on Porfolio page">
+                </div> -->
+     </section>
+
+
+
+  <!--Contact Section-->
+   <section id="Contact">
+       <div class="row justify-content-center contact_section">
+          <div class="col-12 heading">
+           <h2> Contact Me</h2>
+          </div>
+         <div class="col-lg-5 col-md-6 col-sm-7 col-9 contact_grid_form">
+         <form class="rounded contact_form">
+           <div class="col-12">
+             <input type="text" class="form-control" placeholder="Name">
+           </div>
+
+           <div class="col-12 ">
+            <input type="text" class="form-control" placeholder="Email">
+           </div>
+
+        </form>
+        </div>
+        </div>
+  </section>
+
+
+  <section id="Footer">
+    <hr>
+    <div class="row justify-content-center">
+        <p class="footer">© 2015 Craigslist. All rights reserved.</p>
+       </div>
+    </div>
+
 
 
 

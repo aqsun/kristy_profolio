@@ -5,61 +5,194 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kristy's Profolio</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/normalize.css">
+
+	  <link rel="stylesheet" href="css/bootstrap.min.css">
+	  <!--<link rel="stylesheet" href="css/style.css">-->
+	  <link rel="stylesheet" href="css/mdb.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lovers+Quarrel|Merienda|Montez" rel="stylesheet">
+	  <script src="js/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+
+	  <!--<script src="js/mdb.min.js"></script>-->
+	  <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
   </head>
   <body>
+    <div class="container-fluid">
 
-    <nav>
-      <div class="container">
+  <!--Nav-->
+  <div class="row align-items-center">
+   <div class="col-lg-2 col-md-3 col-sm-4 col-4">
+      <a href="Porfolio.html"><img class="homelogo" src="image/homeLogo.png" alt="name logo can go back to porfolio page">
+   </div>
+
+   <div class="col-lg-10 col-md-9 col-sm-8 col-8">
+       <ul class="nav justify-content-end">
+         <li class="nav-item">
+              <a class="nav-link active" href="Porfolio.html#About">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Porfolio.html#Works">Works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Porfolio.html#Contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+    </div>
+
+      <div class="row">
+        <!-- <div class="container-fluid">
+          <div class="col-12"> -->
+            <!-- <img src="image/FirstWork_Banner.png" class="img-fluid" alt="Responsive image">
+          </div>
+        </div> -->
+        <div class="col-lg-6 col-md-6">
+            <img class="Firstwork_leftbanner" src="image/FirstWork_banner_left.png" alt="Brainstorming my first work process">
+        </div>
+        <div class="col-lg-6 col-md-6">
+             <img class="Firstwork_rightbanner" src="image/WorkFirstPage.png" alt="Brainstorming my first work process">
+        </div>
+       </div>
+
+
+    <div class="row justify-content-center">
+       <div class="col-lg-10 col-md-10 col-sm-12 col-12">
+          <p class="description">Train Pro is a fitness mobile application to provide an effective approach for trainees to find their perfect trainers,
+            and in reverse for trainers to find the potential trainee. There are four members working on this application. I was mainly focused on one of
+            the features (chatting system) in this application. In chatting system, trainer and trainee can set and keep track of appointment through chatting
+            which is more convenient for them to communicate and choose the suitable time during the conversation. Another feature is the profile. As a trainee,
+            by filling out some basic information on the profile are able to narrow down your search for right trainers and to show your specific needs in training.
+            The map is another feature that allows a trainee to find trainers around trainee's preferred location of training.</p>
+
+           <h3 class="description_title">Research</h3>
+           <p class="description">I did some research and interview some personal trainer and trainee to get some background of training, The research and interview
+             help me to understand the demand for both trainer and trainee, such as I realized that there are a few fitness applicants to help people finding
+             an appropriate trainer. Moreover, most of the time, people would like to take shortcuts to catch up their desire and get quickly what they want in order to continue
+             the fast-paced life. Our idea of Train Pro application is useful for potential trainees to start the first step. For trainers, they would like to see an interface that
+             would help them to find more clients and show more information about their potential clients' needs before their first meets.</p>
+
+              <h3 class="description_title">Brainstorming</h3>
+              <p class="description">I used a diagram to lay out some key points of my ideas which is easier for groupmates to understand my idea. The diagram on the left shows the biggest
+                problem for a trainee is they don't have much time to find their match trainer. To solve the problem, It is easily and conveniently for trainees to post their goal, basic
+                information and their demands on the Find Your Personal Trainer website to allow all the trainers to view and approach the potential trainees and is easier for trainees to
+                start their first step and save much time to look for their match trainer. So this is how we identify one of our features "profile" at the start of our apps.</p>
+              <p class="description">
+                The diagram on the right shows all our features on the apps. We thought out all potential functions together and used gray circles to classified those potential functions
+                under each feature. Brainstorming brings our idea into Visualization for better presenting our concept.</p>
+
+              <div class="row justify-content-around">
+                  <div class="col-lg-5 col-md-5 col-sm-8 col-10">
+                      <img class="Brainstorming" src="image/Brainstorming1.png" alt="Brainstorming my first work process">
+                    </div>
+                  <div class="col-lg-5 col-md-5 col-sm-8 col-10">
+                    <img class="Brainstorming" src="image/Brainstorming2.png" alt="Brainstorming my first work process">
+                </div>
+              </div>
+
+          <h3 class="description_title">Sketches</h3>
+          <p class="description">I sketched out the wireframe of our application process to provide a general idea of our interface. Our interface starts with two branches, trainee and trainer.
+            If the user needs to choose either side depending who they are. After that, they need to fill out their profile to provide general information such as their purpose of training,
+            their goal, and demand. Then the application will filter some perfect trainers for a trainee, and some potential trainees for trainer base on the information they filling on the profile.</p>
+
+            <div class="row justify-content-around">
+                <div class="col-lg-5 col-md-5 col-sm-8 col-10">
+                    <img class="final_project" src="image/sketch1.png" alt="Brainstorming my first work process">
+                  </div>
+                <div class="col-lg-5 col-md-5 col-sm-8 col-10">
+                  <img class="final_project" src="image/sketch2.png" alt="Brainstorming my first work process">
+              </div>
+            </div>
+
+
+          <h3 class="description_title">Chatting Section</h3>
+          <p class="description">Later on, I was responsible for Chatting Section since chatting is the crucial part to improve the communication between trainer and trainee in the TrainPro application.
+            I need to design and consider more useful features for users to better maintain their connection through the chat system. I added a set and keep track appointment feature, which is more
+            convenient for both trainer and trainee to confirm the training time and both trainer and trainee are able to see their appointment on their schedule. when the time is close to the appointment date.
+            The notification will appear on the main screen to remind the user of the appointment.</p>
+
           <div class="row">
-            <div class="col">
-              <!-- <p> KS</p> -->
+            <div class="col-lg-3 col-md-5 col-sm-5 col-10 justify-content-start">
+                <img class="Wireframe" src="image/wireframe1.png" alt="wireframe for my first work process">
+                <!-- <p>Show more useful information such as indicate whom the user want to appointment with is
+                   helpful to let user knows right now he/she is making appointment with Kelvin Ramsey</p> -->
+              </div>
+            <div class="col-lg-3 col-md-5 col-sm-5 col-10 justify-content-around">
+              <img class="Wireframe" src="image/wireframe2.png" alt="wireframe for my first work process">
             </div>
-            <nav>
-            <div class="col">
-              <ul class="nav justify-content-end">
-                <li class="nav-item">
-                  <a class="nav-link active" href="Porfolio.html#About">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="Porfolio.html#Works">Works</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="Porfolio.html#Contact">Contact</a>
-                </li>
-              </ul>
+            <div class="col-lg-3 col-md-5 col-sm-5 col-10 justify-content-around">
+                <img class="Wireframe" src="image/wireframe3.png" alt="wireframe for my first work process">
+              </div>
+            <div class="col-lg-3 col-md-5  col-sm-5 col-10 justify-content-around">
+              <img class="Wireframe" src="image/wireframe4.png" alt="wireframe for my first work process">
             </div>
-          </nav>
-        </div>
+          </div>
+          <div class="row">
+              <div class="col-lg-3 col-md-5 col-sm-5 col-10">
+                <img class="Wireframe" src="image/bookAppointment.png" alt="prototype of book appointment for my first work process">
+              </div>
+              <div class="col-lg-3 col-md-5 col-sm-5 col-10">
+                <img class="Wireframe" src="image/chatting.png" alt="prototype of chatting section for  my first work process">
+              </div>
+              <div class="col-lg-3 col-md-5 col-sm-5 col-10">
+                <img class="Wireframe" src="image/schedule.png" alt="prototype of schedule for  my first work process">
+              </div>
+              <div class="col-lg-3 col-md-5 col-sm-5 col-10">
+                <img class="Wireframe" src="image/reminder.png" alt="prototype of reminder for  my first work process">
+              </div>
+          </div>
 
 
-        <div class="row">
-           <div class="col-12">
-              <img class="homeBanner" src="image/firstWork_banner.png" alt="an illustration of a chair with the word simplive representing the company's logo">
+        <h3 class="description_title">Final Project</h3>
+        <p class="description">The challenge of this project is there are four members a group, every member has his/her own
+          ideas and reasons of the interface design and different features used in the application, so argument and disagreement
+          is unavoidable during working process, which is the main issue that prevents us keep working with low efficiency at each
+          meeting. Moreover, each member is working on one feature, so when we combine all features together, the overall design is not
+          consistent, so we need to spend extra time to adjust each member's working which increases everyone's workload.</p>
+         <div class="row justify-content-start">
+           <div class="col-lg-4 col-md-5 col-sm-8 col-10">
+           <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="3000">
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+             <img class="d-block final_project" src="image/first_finalwork1.png" alt="First slide">
+            </div>
+            <div class="carousel-item">
+             <img class="d-block final_project" src="image/first_finalwork2.png" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+             <img class="d-block final_project" src="image/first_finalwork3.png" alt="Third slide">
+            </div>
+            </div>
+             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+           <span class="sr-only">Previous</span>
+             </a>
+           <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+           </a>
            </div>
-        </div>
+         </div>
 
-        <div class="row">
-           <div class="col-12 content">
-              <h3> Research</h3>
-              <p>I participated with our group's domain research to identify our intended audiences,and to
-                 understand what technologies they need to used to compelete their tasks, and what challenges
-                 they face at other similar purpose application, how can we improve in our apps.</p>
-               <h3> Sticky Note</h3>
-               <p>I use sticky note to wrote it down my thought of the features we need to have in our application and post
-                  them to whiteboard and share with my groupmates. We all classify all the potential feature into the same category.
-                  I am responsibility on the chatting part of our train pro application.</p>
-               <h3>Wireframe</h3>
-               <p>Since our application is to help trainer and trainee to be a better connection, Chatting is a crucial part in
-                  this apps. I write down all the chatting part wireframe and add a book appointment feature in chatting, so that
-                  trainer and trainee can book an appropriate appointment directly at the chatting section </p>
+         <div class="col-lg-6 col-md-4 col-sm-7 col-7 description_title finalproject_detial">
+           <h4 class="description_title">Visit more detail of our final project</h4>
+           <h5 class="description_title">Link:</h5><a href="https://www.w3schools.com/html/">https://www.w3schools.com/html/</a>
+           <h5 class="description_title">Prototype:</h5><a href="https://drive.google.com/open?id=0Bxy3UodsOw6tSFJHM2JfM1N5dDg">https://drive.google.com/open?id=0Bxy3UodsOw6tSFJHM2JfM1N5dDg</a>
 
-           </div>
-        </div>
+
+         </div>
+
+       </div>
+
+
+
+
+         </div>
       </div>
+    </div>
 
 
-  </body>
+
+</body>
 </html>

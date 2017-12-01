@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <title>Simplive: Style Guide</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="normalize.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link href="css/main-project2.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <h1 class="header">Profolio Style Guide</h1>
+
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+
+      <!-- Main Navigaton -->
+      <section>
+
+        <h2>Navigation Button</h2>
+
+        <h4>CSS selector:</h4>
+        <p>ul .nav justify-content-end</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;ul class="nav justify-content-end"&gt;</code>
+
+
+        <h4>Rendered element:</h4>
+
+        <div class="row align-items-center">
+         <div class="col-lg-2 col-md-3 col-sm-4 col-4">
+            <a href="Porfolio.html"><img class="homelogo" src="image/HomeLogo.png" alt="name logo can go back to porfolio page">
+         </div>
+        <div class="col-lg-10 col-md-9 col-sm-8 col-8">
+            <ul class="nav justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link active" href="#About" onclick="showIntroduction()">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Works">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Contact">Contact</a>
+              </li>
+            </ul>
+        </div>
+      </div>
+      </section>
+
+  <!-- Buttons  -->
+    <section>
+       <h2>MoreAboutMe Buttons</h2>
+       <h4>CSS selector:</h4>
+       <p>.animated fadeInUp button</p>
+       <h4>Sample code:</h4>
+       <code>&lt;a class="animated fadeInUp button" href="#"&gt;More About Me&lt;/a&gt;</code>
+       <h4>Rendered element:</h4>
+       <p><a="moreAboutMe" class="animated fadeInUp button">More About Me</a></p>
+    </section>
+  </section>
+
+
+   <!-- TEXT ELEMENTS SECTION // -->
+   <section id="text_elements">
+    <!-- headings -->
+     <section>
+       <h2>Headings</h2>
+       <h4>CSS selector:</h4>
+       <p>h1,h2</p>
+       <h4>Sample code: </h4>
+       <code>&lt;h1&gt;Hello, I am Kristy&lt;/h1&gt;</code>
+       <code>&lt;h2&gt;Projects&lt;/h2&gt;</code>
+       <h4>Rendered element:</h4>
+               <p><h1>Hello, I am Kristy</h1></p>
+               <p><h2>Hello, I am Kristy</h2></p>
+
+     </section>
+
+     <!-- Paragraphs -->
+      <section>
+        <h2>Paragraphs</h2>
+        <h4>CSS selector:</h4>
+        <p>p</p>
+        <h4>Sample code:</h4>
+        <code>&lt;p&gt;I am currently a student at Simon Fraser University&lt;/p&gt;</code>
+        <h4>Rendered element:</h4>
+        <p>I am currently a student at Simon Fraser University</p>
+      </section>
+    </section>
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+      <section id="combined_elements">
+
+        <!-- A project processing listing -->
+        <section>
+          <h3>Product Processing Image</h3>
+          <h4>CSS selector:</h4>
+          <p>.Wireframe</p>
+          <h4>Sample code:</h4>
+          <code>&lt;div class="row"&gt;</code>
+            <code>&lt;div class="col-lg-3 col-md-5 col-sm-5 col-10&gt;</code>
+            <code>&lt;img class="Wireframe" src="image/bookAppointment.png" alt="prototype of book appointment for my first work process"&gt;</code>
+
+          <h4>Rendered element:</h4>
+          <div class="row">
+              <div class="col-lg-3 col-md-5 col-sm-5 col-10">
+                <img class="Wireframe" src="image/bookAppointment.png" alt="prototype of book appointment for my first work process">
+              </div>
+              <div class="col-lg-3 col-md-5 col-sm-5 col-10">
+                <img class="Wireframe" src="image/chatting.png" alt="prototype of chatting section for  my first work process">
+              </div>
+              <div class="col-lg-3 col-md-5 col-sm-5 col-10">
+                <img class="Wireframe" src="image/schedule.png" alt="prototype of schedule for  my first work process">
+              </div>
+              <div class="col-lg-3 col-md-5 col-sm-5 col-10">
+                <img class="Wireframe" src="image/reminder.png" alt="prototype of reminder for  my first work process">
+              </div>
+          </div>
+        </section>
+
+        <!-- Website Color Swatches -->
+      <section>
+        <h3>Website Color Swatches</h3>
+        <h4>CSS selector:</h4>
+        <p>.banner, .work_section, .contact_section, .description, .Color5, .Color6</p>
+        <h4>Sample code:</h4>
+        <code>&lt;div class="banner"&gt;#f4b494&lt;/div&gt;</code>
+        <code>&lt;div class="work_section"&gt;#ebb7c7&lt;/div&gt;</code>
+        <code>&lt;div class="contact_section"&gt;#a9cdad&lt;/div&gt;</code>
+        <code>&lt;div class="description"&gt;#80a8ba&lt;/div&gt;</code>
+        <code>&lt;div class="work_description"&gt;#c66799&lt;/div&gt;</code>
+        <h4>Rendered element:</h4>
+          <div class="banner">#f4b494</div>
+          <div class="work_section">#ebb7c7</div>
+          <div class="contact_section">#a9cdad</div>
+          <div class="descripton">#80a8ba</div>
+    
+
+    </section>
